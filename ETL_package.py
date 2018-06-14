@@ -40,6 +40,6 @@ if __name__== "__main__":
 	e = ETL_Processor()
 	p = e.process_file('<path_to_file>')
 	for each in p:
-		print each
+		print(each)
 
 
