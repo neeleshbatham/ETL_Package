@@ -55,7 +55,6 @@ class TxtParser():
 
 	def process(self, lines, mapped_columns ):
 
-
 		firstline = True
 		index_list = []
 		data_set=[]

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Author(s): 'Neelesh Batham' <neelesh.batham007@gmail.com>
-# Description: Used to parse files
+# Description: Used to parse files and returns a list of lists
 
 from TxtParser import TxtParser
 from properties import config_reader, Logger
@@ -38,7 +38,7 @@ class ETL_Processor():
 
 if __name__== "__main__":
 	e = ETL_Processor()
-	p = e.process_file('/Users/neeleshbatham/Downloads/Challenge_me.txt')
+	p = e.process_file('<path_to_file>')
 	for each in p:
 		print each
 
