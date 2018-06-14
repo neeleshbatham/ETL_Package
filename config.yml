@@ -1,0 +1,5 @@
+#Configs
+
+mapped_columns: engine-location,num-of-cylinders,engine-size,weight,horsepower,aspiration,price,make
+
+
