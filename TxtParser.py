@@ -43,11 +43,16 @@ class TxtParser():
 				value=''
 			return value
 		else:
-			if type(t) in [int, long, float, bool, tuple]:
-				if type(t) is int or type(t) is long:
-					return  int(value)
+			if type(t) in [int, float, bool, tuple]:
+				if type(t) is int:
+					if len(value) > 5:
+						value=value.replace("," , ".")
+						value = int(value)/100
+						return float(value)
+					else:
+						return int(value)
 				if type(t) is tuple:
-					value = value.replace(",",".")
+					value = value.replace("," , ".")
 					return float(value)
 			else:
 				return value
